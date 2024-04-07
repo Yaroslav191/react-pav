@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { nextPage, prevPage } from "../slices/stockSlice";
 
-const Pagination = ({ indexOfLastItem }) => {
+const PaginationComponent = ({ indexOfLastItem }) => {
   const stocks = useSelector((state) => state.stock.stocks);
   const currentPage = useSelector((state) => state.stock.currentPage);
   const dispatch = useDispatch();
@@ -26,4 +26,4 @@ const Pagination = ({ indexOfLastItem }) => {
   );
 };
 
-export default Pagination;
+export default PaginationComponent;

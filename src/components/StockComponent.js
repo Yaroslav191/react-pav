@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Pagination from "./Pagination";
+import PaginationComponent from "./PaginationComponent";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { useDispatch, useSelector } from "react-redux";
 import { setStocks } from "../slices/stockSlice";
@@ -99,7 +99,7 @@ const StockList = () => {
           </Droppable>
         </table>
 
-        <Pagination indexOfLastItem={indexOfLastItem} />
+        <PaginationComponent indexOfLastItem={indexOfLastItem} />
       </div>
     </DragDropContext>
   );
