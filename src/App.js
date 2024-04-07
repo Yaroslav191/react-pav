@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
-import ActionsComponent from "./components/ActionsComponent";
+import StockComponent from "./components/StockComponent";
 
 function App() {
   return (
-    <div className="App">
-      <ActionsComponent />
+    <div className="container">
+      <StockComponent />
     </div>
   );
 }
